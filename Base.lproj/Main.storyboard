@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment_1_API" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWZ-aB-7Uy">
+                                <rect key="frame" x="20" y="409" width="353" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get Spaceflight News"/>
+                                <connections>
+                                    <action selector="getSpaceflightNewsAPI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WMP-HF-QQn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1l-QR-EJB">
+                                <rect key="frame" x="20" y="314" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get Inshort Facts API"/>
+                                <connections>
+                                    <action selector="getInshortsAPIData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HF2-M7-9Ch"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZx-RM-nlJ">
+                                <rect key="frame" x="20" y="503" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get rusquote API"/>
+                                <connections>
+                                    <action selector="getrusquoteAPIData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sJJ-u7-uDF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DWZ-aB-7Uy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0kD-nz-8ow"/>
+                            <constraint firstItem="DWZ-aB-7Uy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="350" id="4eA-n1-G4N"/>
+                            <constraint firstItem="DWZ-aB-7Uy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8T8-r0-S9v"/>
+                            <constraint firstItem="RZx-RM-nlJ" firstAttribute="centerX" secondItem="DWZ-aB-7Uy" secondAttribute="centerX" id="Cqo-YO-8do"/>
+                            <constraint firstItem="RZx-RM-nlJ" firstAttribute="top" secondItem="DWZ-aB-7Uy" secondAttribute="bottom" constant="60" id="EFA-JB-Zhw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RZx-RM-nlJ" secondAttribute="trailing" constant="20" id="Kds-5W-EgW"/>
+                            <constraint firstItem="DWZ-aB-7Uy" firstAttribute="top" secondItem="N1l-QR-EJB" secondAttribute="bottom" constant="60" id="LDa-TK-EcC"/>
+                            <constraint firstItem="N1l-QR-EJB" firstAttribute="leading" secondItem="DWZ-aB-7Uy" secondAttribute="leading" id="YNN-JX-odx"/>
+                            <constraint firstItem="RZx-RM-nlJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dcu-on-1zS"/>
+                            <constraint firstItem="DWZ-aB-7Uy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f4D-N5-frd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N1l-QR-EJB" secondAttribute="trailing" constant="20" id="nyk-jR-F3B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DWZ-aB-7Uy" secondAttribute="trailing" constant="20" id="y5j-eu-W2z"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
